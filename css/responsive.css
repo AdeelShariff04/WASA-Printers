@@ -788,6 +788,7 @@
 	.prt-vertical_sep > [class*='col']:not(:last-child):before { display: none; }
 	.prt_listimgbox_wrapper .prt_listimgbox_wrap .prt-box-title { width: 100%; margin-bottom: 10px; margin-top: 0; }
 	.prt_listimgbox_wrapper .preyantechnosys-listimgbox-heading { width: 100%; margin-bottom: 18px; }
+	.prt_listimgbox_wrapper .office-contact-details { width: 100%; }
 	.prt_listimgbox_wrapper .prt_listimgbox_wrap .prt-box-subtitle { font-size: 20px; }
 	.prt_listimgbox_wrapper .award_picture { width: 100%; text-align: left; }
 	.prt_listimgbox_wrapper .award_picture img { width: 100%; height: auto; }

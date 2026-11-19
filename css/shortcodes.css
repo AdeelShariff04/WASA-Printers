@@ -593,15 +593,15 @@ h2.first-text {
 
 /** btn-color **/
 .prt-btn-color-skincolor { 
-    color: linear-gradient(to right, #fc953b , #ff6469 );
+    color: linear-gradient(to right, #0D928D , #074d4a );
 }
 .prt-btn.prt-btn-style-fill.prt-btn-color-skincolor {
-    background: linear-gradient(to right, #fc953b , #ff6469 );
-    border: linear-gradient(to right, #fc953b , #ff6469 );
+    background: linear-gradient(to right, #0D928D , #074d4a );
+    border: linear-gradient(to right, #0D928D , #074d4a );
     color: var(--base-white);
 }
 .prt-btn.prt-btn-style-fill.prt-btn-color-skincolor:hover {
-    background-image: linear-gradient(to right,#ff6469 0%,#fc953b 50%,#ff6469 100% );
+    background-image: linear-gradient(to right,#074d4a 0%,#0D928D 50%,#074d4a 100% );
     background-position: right center;
     background-size: 200% auto;
     transition: 0.5s;
@@ -1644,7 +1644,7 @@ section { counter-reset:container}
 .featured-icon-box.style5 {
     padding: 32px 15px 35px 38px;
     background-color: var(--base-white);
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
 }
 .featured-icon-box.style5:last-child { margin-bottom: 0; }
 .featured-icon-box.style5 .prt-icon i {
@@ -2902,12 +2902,12 @@ div:hover > .prt-box-view-overlay:before, div:hover > .prt-box-view-content-inne
 .prt-progress-bar:not(:last-child){ margin-bottom: 30px; }
 .prt-progress-bar .progressbar-title {
     display: block;
-    padding: 0px 15px 0px;
+    /* padding: 0px 15px 0px; */
     margin-bottom: 5px;
     font-size: 14px;
     line-height: 30px;
     font-weight: 500;
-    padding-left: 15px;
+    /* padding-left: 15px; */
     text-transform: capitalize;
     color: #000;
     background-color: var(--base-grey);
@@ -2932,7 +2932,8 @@ div:hover > .prt-box-view-overlay:before, div:hover > .prt-box-view-content-inne
     height: 5px;
     line-height: 5px;
     position: relative;
-    background: linear-gradient(to right, #fc953b , #ff6469 );
+    /* background: linear-gradient(to right, #fc953b , #ff6469 ); */
+    background: linear-gradient(to right, #0D928D , #074d4a );
     overflow: visible;
 }
 .prt-progress-bar .progress-bar-inner{ 
@@ -2941,6 +2942,24 @@ div:hover > .prt-box-view-overlay:before, div:hover > .prt-box-view-content-inne
     width: 100%;
     z-index: 1;
     background-color: transparent;
+}
+.progress-bars-reversed .progress-bar-inner {
+    display: flex;
+    justify-content: flex-end;
+}
+.progress-bars-reversed .progress-bar {
+    background: linear-gradient(to left, #0D928D, #074d4a);
+}
+.prt-progress-bar .progress-bar::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to right, #fc953b, #ff6469);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.prt-progress-bar:hover .progress-bar::before {
+    opacity: 1;
 }
 .bg-base-skin .prt-progress-bar .progress-bar-inner {
     background-color: rgba(0, 0, 0, 0.1);
@@ -3916,8 +3935,12 @@ ul.product_list_widget li img { width: 80px; float: left; margin-left: 0; margin
     background-color: var(--base-white);
 }
 .prt_listimgbox_wrapper .award_picture {
+    width: 26%;
     transition: .5s all;
     opacity: 0;
+}
+.prt_listimgbox_wrapper .preyantechnosys-listimgbox-heading {
+    width: 34%;
 }
 .prt_listimgbox_wrapper .prt_listimgbox_wrap.active .award_picture {
     transition: .5s all;
@@ -3933,6 +3956,27 @@ ul.product_list_widget li img { width: 80px; float: left; margin-left: 0; margin
     -webkit-box-orient: vertical;
     width: 62%;
 }
+.prt_listimgbox_wrapper .office-contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding-top: 7px;
+    width: 100%;
+}
+.prt_listimgbox_wrapper .office-contact-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    line-height: 1.5;
+}
+.prt_listimgbox_wrapper .office-contact-row i {
+    flex: 0 0 16px;
+    margin-top: 4px;
+}
+.prt_listimgbox_wrapper .office-contact-row a {
+    color: inherit;
+    overflow-wrap: anywhere;
+}
 .award_picture img {
     max-width: 100%; 
     position: absolute;
@@ -3947,7 +3991,7 @@ ul.product_list_widget li img { width: 80px; float: left; margin-left: 0; margin
     transform: rotate(-17deg);
 }
 .prt_listimgbox_wrapper .prt_listimgbox_wrap .prt-box-title {
-    width: 102%;
+    width: 40%;
     margin-bottom: 0;
     font-size: 39px;
     line-height: 1;

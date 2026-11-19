@@ -223,6 +223,7 @@ menu, ol, ul {
     --base-grey: #f6f6f6;
     --base-white: #ffffff; 
     --base-accent: #0D928D;
+    --base-accent-dark: #074d4a;
     --base-bodyfont-color: #686868;    
     --base-headingfont-color: #000000; 
     --base-headingfont: 'Lora', serif;
@@ -1848,6 +1849,18 @@ nav.main-menu ul.menu > li.mega-menu-item:hover > a {
     color: var(--base-white);
 }
 .newsletter-form button[type="submit"]:hover i{
+    color: linear-gradient(to right, #0D928D , #074d4a );
+}
+.newsletter-form .prt-btn.prt-btn-style-fill.prt-btn-color-skincolor:hover {
+    background-color: var(--base-white);
+    border-color: var(--base-white);
+    color: linear-gradient(to right, #0D928D , #074d4a );
+}
+.newsletter-form .prt-btn.prt-icon-shap.prt-btn-style-fill:hover i{
+    background-color: linear-gradient(to right, #0D928D , #074d4a );
+    color: var(--base-white);
+}
+/* .newsletter-form button[type="submit"]:hover i{
     color: linear-gradient(to right, #fc953b , #ff6469 );
 }
 .newsletter-form .prt-btn.prt-btn-style-fill.prt-btn-color-skincolor:hover {
@@ -1858,7 +1871,7 @@ nav.main-menu ul.menu > li.mega-menu-item:hover > a {
 .newsletter-form .prt-btn.prt-icon-shap.prt-btn-style-fill:hover i{
     background-color: linear-gradient(to right, #fc953b , #ff6469 );
     color: var(--base-white);
-}
+} */
 
 /* checkbox  */
 .footer input[type=checkbox]{
