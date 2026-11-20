@@ -1639,6 +1639,17 @@ section { counter-reset:container}
     font-size: 22px;
     line-height: 32px;
 }
+.awards-slider .featured-icon-box.style4 .icon-type-image,
+.awards-slider .featured-icon-box.style4 .featured-content {
+    width: 100%;
+    text-align: center;
+}
+.awards-slider .featured-icon-box.style4 .icon-type-image img,
+.awards-slider .featured-icon-box.style4 .featured-content > img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 /* style5 */
 .featured-icon-box.style5 {
@@ -3894,6 +3905,25 @@ ul.product_list_widget li img { width: 80px; float: left; margin-left: 0; margin
     padding-left: 15px;
     padding-right: 15px;
 }
+.client-logo-carousel .slick-slide {
+    padding: 0 12px;
+}
+.client-logo-carousel .client-box .prt-client-logo-tooltip {
+    margin: 0;
+    overflow: visible;
+}
+.client-logo-carousel .client-thumbnail {
+    display: flex;
+    height: 90px;
+    align-items: center;
+    justify-content: center;
+}
+.client-logo-carousel .client-thumbnail img {
+    width: 100%;
+    max-width: 160px;
+    height: 70px;
+    object-fit: contain;
+}
 .marque-section .prt-box-title h3 {
     font-size: 30px;
     line-height: 1;
@@ -3976,6 +4006,26 @@ ul.product_list_widget li img { width: 80px; float: left; margin-left: 0; margin
 .prt_listimgbox_wrapper .office-contact-row a {
     color: inherit;
     overflow-wrap: anywhere;
+}
+.prt_listimgbox_wrapper .company-logo-column {
+    flex: 0 0 40%;
+}
+.prt_listimgbox_wrapper .company-logo-placeholder {
+    display: flex;
+    width: 200px;
+    height: 200px;
+    max-width: 100%;
+    align-items: center;
+    justify-content: center;
+    border: 2px dashed #ced7e4;
+    color: var(--base-bodyfont-color);
+    text-align: center;
+}
+.prt_listimgbox_wrapper .company-logo-placeholder img {
+    width: 100%;
+    height: 100%;
+    padding: 8px;
+    object-fit: contain;
 }
 .award_picture img {
     max-width: 100%; 
