@@ -3953,14 +3953,14 @@ ul.product_list_widget li img { width: 80px; float: left; margin-left: 0; margin
 }
 .client-logo-carousel .client-thumbnail {
     display: flex;
-    height: 90px;
+    height: 100px;
     align-items: center;
     justify-content: center;
 }
 .client-logo-carousel .client-thumbnail img {
     width: 100%;
     max-width: 160px;
-    height: 70px;
+    height: 100px;
     object-fit: contain;
 }
 .marque-section .prt-box-title h3 {

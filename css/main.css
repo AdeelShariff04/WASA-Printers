@@ -2067,10 +2067,10 @@ nav.main-menu ul.menu > li.mega-menu-item:hover > a {
     background-repeat: no-repeat;
 }
 .prt-titlebar-wrapper.about-img {
-    background-image: url(../images/pagetitle-bg.jpg);
+    background-image: url(../images/pagetitle-new-bg.png);
 }
 .prt-titlebar-wrapper.about-img-01 {
-    background-image: url(../images/pagetitle-bg-1.jpg);
+    background-image: url(../images/pagetitle-new2-bg.png);
 }
 .prt-titlebar-wrapper.service-img {
     background-image: url(../images/pagetitle-bg-2.jpg);
@@ -2082,11 +2082,11 @@ nav.main-menu ul.menu > li.mega-menu-item:hover > a {
     background-image: url(../images/pagetitle-bg-3.jpg);
 }
 .prt-titlebar-wrapper.contact-us {
-    background-image: url(../images/pagetitle-bg-4.jpg);
+    background-image: url(../images/pagetitle-new-bg.png);
 }
-.prt-titlebar-wrapper.prt-bg > .prt-titlebar-wrapper-bg-layer.prt-bg-layer {
+/* .prt-titlebar-wrapper.prt-bg > .prt-titlebar-wrapper-bg-layer.prt-bg-layer {
     background-color: rgb(0 0 0 / 47%);
-}
+} */
 .prt-titlebar-wrapper-inner {
     display: flex;
     align-items: center;
