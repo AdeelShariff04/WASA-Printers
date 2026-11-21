@@ -222,6 +222,7 @@ menu, ol, ul {
     --base-dark: #000000;
     --base-grey: #f6f6f6;
     --base-white: #ffffff; 
+    --base-accent-light: #4f93916f;
     --base-accent: #0D928D;
     --base-accent-dark: #074d4a;
     --base-bodyfont-color: #686868;    
@@ -241,7 +242,8 @@ menu, ol, ul {
 .bg-base-grey { background-color: var(--base-grey);}
 .bg-base-white { background-color: var(--base-white);}
 .bg-base-accent { background-color: var(--base-accent);}
-
+.bg-base-accent-dark { background-color: var(--base-accent-dark);}
+.bg-base-accent-light { background-color: var(--base-accent-light);}
 .bg-base-light-skin  { background-color: #e02454bd;}
   
 /** Text Colors **/
@@ -866,7 +868,7 @@ ul.social-icons{
 /*  ===============================================
     Slick_dots/arrows
 ------------------------*/
-.slick-slide{ border: 0; outline: 0; padding: 0 15px;}
+.slick-slide{ border: 0; outline: 0; padding: 20px 15px;}
 .slick_slider.no-gutters .slick-slide { padding: 0; }
 .slick-slide_ver-sep .slick-slide.slick-active:not(.slick-current) > div:after{
     position: absolute;

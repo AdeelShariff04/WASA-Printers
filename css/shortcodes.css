@@ -61,7 +61,7 @@
 .prt-row.product-section{padding: 95px 0 0;}
 .prt-row.special-text-section {padding: 63px 0 100px;}
 .prt-row.testimonial-section {padding: 100px 0 56px;}
-.prt-row.marque-section {padding: 27px 0 20px;}
+.prt-row.marque-section {padding: 27px 0 20px; border-top: 3px solid var(--base-accent);}
 .prt-row.service-section_1 {padding: 55px 0 0px;}
 .prt-row.team-section {padding: 197px 0 95px;}
 
@@ -556,7 +556,7 @@ h2.first-text {
     -webkit-text-stroke: 2px var(--base-dark);
     line-height: 90px;
     display: inline-block;
-    z-index: -1;
+    z-index: 1;
     display: inline-block;
     vertical-align: top;
     white-space: nowrap;
@@ -1723,7 +1723,7 @@ section { counter-reset:container}
 
 /* style7 */
 .featured-icon-box.style7 {
-    padding: 20px;
+    padding: 14px;
     margin: 0 5px 10px;
 }
 .featured-icon-box.style7 .prt-icon i {
@@ -1733,7 +1733,7 @@ section { counter-reset:container}
 
 /* style8 */
 .featured-icon-box.style8 {
-    padding: 20px;
+    padding: 14px;
     border: 2px solid #e6e6e6;
     margin-right: 30px;
 }
@@ -2684,6 +2684,45 @@ div:hover > .prt-box-view-overlay:before, div:hover > .prt-box-view-content-inne
     transition: transform 0.5s ease-in-out;
 }
 .featured-imagebox-portfolio.style3 { margin-top: 0; }
+.portfolio-section_1 .portfolio-pagination {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 32px;
+}
+.portfolio-section_1 .portfolio-page-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    border: 1px solid #074d4a;
+    border-radius: 50%;
+    background: #fff;
+    color: #074d4a;
+    cursor: pointer;
+    transition: color 0.25s ease, background 0.25s ease, border-color 0.25s ease, transform 0.15s ease;
+}
+.portfolio-section_1 .portfolio-page-button:not(:disabled):hover {
+    border-color: #fc953b;
+    background: linear-gradient(to right, #fc953b, #ff6469);
+    color: #fff;
+}
+.portfolio-section_1 .portfolio-page-button:not(:disabled):active {
+    transform: scale(0.94);
+}
+.portfolio-section_1 .portfolio-page-button:focus-visible {
+    outline: 2px solid #fc953b;
+    outline-offset: 3px;
+}
+.portfolio-section_1 .portfolio-page-button:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+.portfolio-section_1 [hidden] {
+    display: none !important;
+}
 .featured-imagebox-portfolio.style3 .featured-content {
     padding: 23px 30px 23px;
     text-align: left;
