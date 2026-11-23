@@ -2684,6 +2684,12 @@ div:hover > .prt-box-view-overlay:before, div:hover > .prt-box-view-content-inne
     transition: transform 0.5s ease-in-out;
 }
 .featured-imagebox-portfolio.style3 { margin-top: 0; }
+.service-001 .featured-imagebox-portfolio.style3 .featured-thumbnail img,
+.service-001 .featured-imagebox-portfolio.style3:hover .featured-thumbnail img {
+    height: auto;
+    object-fit: contain;
+    transform: none;
+}
 .portfolio-section_1 .portfolio-pagination {
     display: flex;
     justify-content: center;
